@@ -25,8 +25,6 @@ const personalMovieDB = {
 
 // ЗАДАЧА 2.1
 
-
-
 function rememberMyFilms () {
     for (let i = 0; i < 2; i++) {
     
@@ -43,7 +41,6 @@ function rememberMyFilms () {
 };
 rememberMyFilms();
 
-
 function detectPersonalLvl() {
     if (personalMovieDB.count < 10) {
     console.log("MALO FILMOV");
@@ -54,3 +51,21 @@ function detectPersonalLvl() {
 }
 
 };
+
+
+function showMyDB (hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    };
+};
+
+showMyDB(personalMovieDB);
+
+
+function writeYourGenres () {
+    for (let i = 1; i <=3 ; i++) {
+     personalMovieDB.genre[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+    };
+};
+
+writeYourGenres();
