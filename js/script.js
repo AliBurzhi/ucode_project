@@ -68,3 +68,4 @@ function writeYourGenres () {
 };
 
 writeYourGenres();
+console.log(personalMovieDB);
