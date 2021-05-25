@@ -1,5 +1,7 @@
  // ЗАДАЧА 1.1
+
 let numberOfFilms;
+
 // ЗАДАЧА 1.2
 
 function start() {
@@ -19,9 +21,6 @@ const personalMovieDB = {
     genders: [],
     privat: false
 };
-
-// ЗАДАЧА 1.3
-
 
 // ЗАДАЧА 2.1
 
@@ -64,7 +63,7 @@ showMyDB(personalMovieDB);
 
 function writeYourGenres () {
     for (let i = 1; i <=3 ; i++) {
-     personalMovieDB.genre[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+     personalMovieDB.genders[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
     };
 };
 
