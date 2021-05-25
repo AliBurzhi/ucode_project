@@ -1,8 +1,16 @@
  // ЗАДАЧА 1.1
- const numberOfFilms = prompt("Сколько фильмов Вы уже посмотрели?", 100);
-console.log(numberOfFilms);
-
+let numberOfFilms;
 // ЗАДАЧА 1.2
+
+function start() {
+    numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", 100);
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", 100);
+    }
+};
+
+start();
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -17,7 +25,10 @@ const personalMovieDB = {
 
 // ЗАДАЧА 2.1
 
-for (let i = 0; i < 2; i++) {
+
+
+function rememberMyFilms () {
+    for (let i = 0; i < 2; i++) {
     
         const a = prompt("Один из просмотренных фильмов?", ""),
         b = prompt("На сколько оцените его?", "");
@@ -29,12 +40,17 @@ for (let i = 0; i < 2; i++) {
     }
     
 }
-if (personalMovieDB.count < 10) {
+};
+rememberMyFilms();
+
+
+function detectPersonalLvl() {
+    if (personalMovieDB.count < 10) {
     console.log("MALO FILMOV");
 } else if (personalMovieDB > 10 && personalMovieDB < 30) {
     console.log("NORM FILMOV");
 } else {
     console.log("KINOMAN");
-};
+}
 
-console.log(personalMovieDB);
+};
