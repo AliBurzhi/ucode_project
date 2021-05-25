@@ -1,5 +1,5 @@
  // ЗАДАЧА 1.1
- const numberOfFilms = +prompt("Сколько фильмов Вы уже посмотрели?", 100);
+ const numberOfFilms = prompt("Сколько фильмов Вы уже посмотрели?", 100);
 console.log(numberOfFilms);
 
 // ЗАДАЧА 1.2
