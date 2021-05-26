@@ -93,7 +93,15 @@ circles[0].style.backgroundColor = 'red';
 //     hearts[i].style.backgroundColor = 'blue';
 // }
 
-
 hearts.forEach(item => {
     item.style.backgroundColor = 'blue';
 });
+
+const div = document.createElement('div');
+// const text = document.createTextNode('Тут был я');
+div.classList.add('black');
+
+
+document.querySelector('.wrapper').append(div); // добавляем наш div в конец body
+
+
