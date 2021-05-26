@@ -1,4 +1,4 @@
-// ЗАДАЧА 1.1
+/* // ЗАДАЧА 1.1
 
 const personalMovieDB = {
     count: 0,
@@ -15,17 +15,17 @@ const personalMovieDB = {
     },
     rememberMyFilms: function () {
     for (let i = 0; i < 2; i++) {
-    
+
         const a = prompt("Один из просмотренных фильмов?", ""),
         b = prompt("На сколько оцените его?", "");
-   
+
     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
          personalMovieDB.movies[a] = b;
     } else {
         console.log('error');
         i--;
     }
-    
+
 }
     },
     detectPersonalLvl: function () {
@@ -35,7 +35,7 @@ const personalMovieDB = {
     console.log("NORM FILMOV");
 } else if (personalMovieDB.count >= 30) {
         console.log("KINOMAN");
-        
+
     } else {
         console.log('ERROR');
 }
@@ -52,12 +52,12 @@ const personalMovieDB = {
         } else  {
             personalMovieDB.privat = true;
         }
-        
+
     },
     writeYourGenres: function () {
     for (let i = 1; i < 2 ; i++) {
      let genre = prompt(`Ваш любимый жанр под номером ${i}`);
-    
+
         if (genre === '' || genre == null) {
             console.log('NEPRAVILNO VVELI DANNUE');
             i--;
@@ -69,5 +69,7 @@ const personalMovieDB = {
             console.log(`Любимый жанр ${i + 1} - это ${item}`);
         });
     }
-   
-};
+
+}; */
+
+
