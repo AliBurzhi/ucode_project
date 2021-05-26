@@ -77,8 +77,8 @@ const box = document.getElementById('box'),
     btns = document.getElementsByTagName('button'),
     circles = document.getElementsByClassName('circle'),
     hearts = document.querySelectorAll('.heart'),
-    oneHeart = document.querySelector('.heart');
-
+    oneHeart = document.querySelector('.heart'),
+    wrapper = document.querySelector('.wrapper');
 
 // box.style.backgroundColor = 'blue';
 // box.style.width = '500px';
@@ -102,6 +102,16 @@ const div = document.createElement('div');
 div.classList.add('black');
 
 
-document.querySelector('.wrapper').append(div); // добавляем наш div в конец body
+// wrapper.append(div); // 
+
+// wrapper.prepend(div); // вставляем в начало 
+
+// hearts[0].before(div); // точечно всталяем
+
+// circles[0].remove(); // удаляем
+
+// hearts[0].replaceWith(circles[0]); // заменяем один єлемент другим
+
+
 
 
