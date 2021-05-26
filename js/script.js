@@ -102,7 +102,7 @@ const div = document.createElement('div');
 div.classList.add('black');
 
 
-// wrapper.append(div); // 
+
 
 // wrapper.prepend(div); // вставляем в начало 
 
@@ -112,6 +112,12 @@ div.classList.add('black');
 
 // hearts[0].replaceWith(circles[0]); // заменяем один єлемент другим
 
+wrapper.append(div); // 
+
+// div.textContent = "Hello";
+div.innerHTML = "<h1>Hello World</h1>";
+
+div.insertAdjacentHTML('beforeend', '<h2>Hello</h2>');
 
 
 
