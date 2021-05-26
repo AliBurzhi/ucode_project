@@ -1,12 +1,11 @@
-'use strict';
- // ЗАДАЧА 1.1
+// ЗАДАЧА 1.1
 
 const personalMovieDB = {
     count: 0,
     movies: {},
     actors: {},
     genders: [],
-    privat: true,
+    privat: false,
     start: function() {
     personalMovieDB.count = +prompt("Сколько фильмов Вы уже посмотрели?", 100);
 
@@ -32,7 +31,7 @@ const personalMovieDB = {
     detectPersonalLvl: function () {
     if (personalMovieDB.count < 10) {
     console.log("MALO FILMOV");
-} else if (personalMovieDB >= 10 && personalMovieDB < 30) {
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
     console.log("NORM FILMOV");
 } else if (personalMovieDB.count >= 30) {
         console.log("KINOMAN");
@@ -59,11 +58,11 @@ const personalMovieDB = {
     for (let i = 1; i < 2 ; i++) {
      let genre = prompt(`Ваш любимый жанр под номером ${i}`);
     
-        if (genre === '' || genre === null) {
+        if (genre === '' || genre == null) {
             console.log('NEPRAVILNO VVELI DANNUE');
             i--;
         } else {
-            personalMovieDB.genders[i - 1] = genre;
+            personalMovieDB.genres[i - 1] = genre;
     }
         }
         personalMovieDB.genres.forEach((item, i) => {
@@ -72,7 +71,3 @@ const personalMovieDB = {
     }
    
 };
-
-console.log(personalMovieDB);
-
-
