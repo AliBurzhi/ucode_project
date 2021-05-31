@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 /* // ЗАДАЧА 1.1
 
 const personalMovieDB = {
@@ -118,7 +118,3 @@ wrapper.append(div); //
 div.innerHTML = "<h1>Hello World</h1>";
 
 div.insertAdjacentHTML('beforeend', '<h2>Hello</h2>');
-
-
-
-
